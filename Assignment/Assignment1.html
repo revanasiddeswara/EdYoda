@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food App</title>
+    <style>
+        html {
+      scroll-behavior: smooth;
+    }
+      header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header li {
+  float: left;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0px;margin:0px;
+    background-color:  #fdc50f ;
+    font-weight: 750;
+}
+ header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.main ul li a:hover {
+      color: rgb(255, 0, 0);
+    }
+.main ol li a:hover {
+      color: rgb(255, 0, 0);
+    }
+
+header li a:hover {
+  background-color: #111;
+}
+      .text-content a{
+        text-decoration:none;
+        color:black;
+      }
+      .images{
+        width:50%;
+        margin:0 auto;
+      }
+      .labels{
+        margin-left:240px;
+        margin-bottom:40px;
+      }
+      .fooditem{
+        padding:10px;
+        width:468px;
+        height:232px
+      }
+      .fooddiv{
+        background-color: aliceblue;
+        width:490px;
+        box-shadow: 5px 5px 5px rgb(20, 19, 19);
+        align-items: center;
+      }
+      .button{
+        width: 100%;
+        font-weight: 800;
+        height:50px;
+        background-color: rgb(173, 101, 12);
+        color:#ffffff
+      }
+    </style>
+  </head>
+  <body >
+    <header>
+      <ul id="top">
+        <li><a href="#">Index</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </header>
+    <div class="main">
+      <div class="text-content">
+        <h1>Choose Food Type</h1>
+        <ul>
+          <li style="font-size: 25px;"><a href="#vegiterian">Vegiterian</a></li>
+          <li style="font-size: 25px;"><a href="#Non-vegiterian">Non-vegiterian</a></li>
+        </ul>
+        <h1 id="vegiterian">Top 5 Favourite Vegiterian Foods</h1>
+        <ol>
+          <li><a href="#Vada">Vada-Curry</a></li>
+          <li><a href="#cake">Idli</a></li>
+          <li><a href="#pizza">Dosa</a></li>
+          <li><a href="#choupsey">Puliyogare</a></li>
+          <li><a href="#wings">Dal-Kichidi</a></li>
+        </ol>
+        <div class="images">
+            <h2 style=" border-bottom: 5px solid red; width:490px">Vegiterian Food Photos</h2>
+            <div class="fooddiv" id="Vada" ><img src="https://geekrobocook.com/wp-content/uploads/2021/03/40.-Vada-Curry-768x432.jpg"  class="fooditem">
+            <p class="labels" style="margin-top:5px; font-weight: 800;">Vada-Curry</p></div>
+            <div class="fooddiv" id="cake"><img src="https://www.pillsbury.in/wp-content/uploads/2021/09/Idli.jpg"  class="fooditem"/>
+            <p class="labels"  style="margin-top:5px; font-weight: 800;">Idli</p></div>
+            <div class="fooddiv" id="pizza" ><img src="https://www.efghfoods.com/wp-content/uploads/2020/11/Blog-2-min.jpg"  class="fooditem"/>
+            <p class="labels"  style="margin-top:5px; font-weight: 800;">Dosa</p></div>
+            <div class="fooddiv" id="choupsey"><img src="https://t4.ftcdn.net/jpg/05/07/96/53/360_F_507965361_vZNtYoglr9IyJkN4EpK9i4ydqOpSCYLc.jpg" class="fooditem"/>
+            <p class="labels"  style="margin-top:5px; font-weight: 800;">Puliyogare</p></div>
+            <div class="fooddiv" id="wings" ><img src="https://www.masalakorb.com/wp-content/uploads/2016/12/Masala-Khichdi-FI-0236.jpg"  class="fooditem"/>
+            <p class="labels"  style="margin-top:5px; font-weight: 800;">Dal-Kichidi</p></div>
+          </div>
+        <h1 id="Non-vegiterian">Top 5 Favourite Non-Vegiterian Foods</h1>
+        <ol>
+          <li><a href="#biryani">Chikken Beryani</a></li>
+          <li><a href="#Muttonberyani">Mutton Beriyani</a></li>
+          <li><a href="#fish">Fish Curry</a></li>
+          <li><a href="#fry">ChikkenFry</a></li>
+          <li><a href="#Thali">Non Veg Thali</a></li>
+        </ol>
+      </div> 
+      <div class="images">
+        <h2 style=" border-bottom: 5px solid red; width:490px">Vegiterian Food Photos</h2>
+        <div class="fooddiv" id="biryani" ><img src="https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4="  class="fooditem">
+        <p class="labels" style="margin-top:5px; font-weight: 800;">Chikken Beryani</p></div>
+        <div class="fooddiv" id="Muttonberyani"><img src="https://hattyfoods.com/wp-content/uploads/2020/07/MUTTON-BIRYANI-RECIPE1.jpg"  class="fooditem"/>
+        <p class="labels"  style="margin-top:5px; font-weight: 800;">Mutton Beriyani</p></div>
+        <div class="fooddiv" id="fish" ><img src="https://cdn.shopify.com/s/files/1/0524/2113/2440/articles/Fish_curry_9856ebe4-b863-418f-865b-2ecd3c54ff67.jpg?v=1673354716"  class="fooditem"/>
+        <p class="labels"  style="margin-top:5px; font-weight: 800;">Fish Curry</p></div>
+        <div class="fooddiv" id="fry"><img src="https://spoonsofflavor.com/wp-content/uploads/2020/08/Easy-Chicken-Fry-Recipe.jpg" class="fooditem"/>
+        <p class="labels"  style="margin-top:5px; font-weight: 800;">ChikkenFry</p></div>
+        <div class="fooddiv" id="Thali" ><img src="https://assets.thehansindia.com/h-upload/2020/03/14/953945-food.webp"  class="fooditem"/>
+        <p class="labels"  style="margin-top:5px; font-weight: 800;">Non Veg Thali</p></div>
+      </div>
+      <div>
+        <a href="#top">
+        <button class="button">Back To Top <span style="font-size: 20px;">&#8679;</span></button></a>
+    </div>
+    </div>
+    
+  </body>
+</html>
