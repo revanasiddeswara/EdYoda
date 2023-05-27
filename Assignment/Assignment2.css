@@ -79,7 +79,7 @@ nav ul{
   font-size: 16px;
   padding: 16px 0px 0px 0px;
 }
-nav ul li{
+nav ul a li {
   float: left;
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
@@ -92,6 +92,10 @@ nav ul li{
   border: 1px solid #0285FF;
   margin: 5px;
   cursor: pointer;
+}
+nav ul a :hover{
+  background-color:#0084ff;
+  color:#fff;
 }
 nav ul #activeCategory{
   background-color:#0084ff;
